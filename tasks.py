@@ -12,7 +12,7 @@ def view_tasks():
             tasks = file.readlines()
 
         if not tasks:
-            print("No tasks found.")
+            print("No tasks available. Add your first task!")
             return
 
         print("\nYour Tasks:")
@@ -21,4 +21,4 @@ def view_tasks():
             print(f"{number}. {task.strip()}")
 
     except FileNotFoundError:
-        print("No tasks found.")
+        print("No tasks available. Add your first task!")
